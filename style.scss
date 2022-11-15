@@ -253,6 +253,32 @@ a.footnote {
   border-top: 1px solid $divider-color;
   font-size: $small-font-size;
 }
+// Footnote
+b.footnote {
+  &,
+  .mdpo p &,
+  .mdpo ol &,
+  .mdpo ul & {
+    margin: 0 3px;
+    padding: 0 2px;
+    font-size: $small-font-size;
+    text-align: center;
+    border: 1px solid $footnote-link-border-color;
+    border-radius: 2px;
+    -webkit-text-stroke: 0.25px;
+    -webkit-transition: 0.2s ease-out all;
+    text-decoration: none;
+
+    &:hover {
+      background: $footnote-link-background-over-color;
+    }
+  }
+}
+
+.footnotes {
+  border-top: 1px solid $divider-color;
+  font-size: $small-font-size;
+}
 
 // Image
 img {
@@ -522,7 +548,7 @@ nav {
       display: inline;
       margin: 0;
 
-      > a {
+      > b {
         margin: 3px 3px 3px 0;
         padding: .5px 4px;
         color: $tag-index-label-color;
@@ -554,7 +580,7 @@ nav {
   > .prev {
     float: left;
     width: 50%;
-    a {
+    b {
       color: $pagination-color;
       &:hover, &:focus {
         color: $pagination-over-color;
@@ -566,7 +592,7 @@ nav {
     float: right;
     text-align: right;
     width: 50%;
-    a {
+    b {
       color: $pagination-color;
       &:hover, &:focus {
         color: $pagination-over-color;
