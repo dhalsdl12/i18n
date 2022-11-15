@@ -4,24 +4,24 @@ title: mdpo
 permalink: /mdpo/
 ---
 
-{% if site.posts.size == 0 %}
-  <h2>No post found</h2>
+{% if site.mdpos.size == 0 %}
+  <h2>No mdpo found</h2>
 {% endif %}
 
-<div class="posts">
-  {% for post in paginator.posts %}
-    <article class="post">
+<div class="mdpos">
+  {% for mdpo in paginator.mdpos %}
+    <article class="mdpo">
       <h1>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}{{ mdpo.url }}">{{ mdpo.title }}</a>
       </h1>
 
       <div>
         <span class="date">
-          {{ post.date | date: "%Y-%m-%d" }}
+          {{ mdpo.date | date: "%Y-%m-%d" }}
         </span>
 
         <ul class="tag">
-          {% for tag in post.tags %}
+          {% for tag in mdpo.tags %}
           <li>
             <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
               {{ tag }}
@@ -32,10 +32,10 @@ permalink: /mdpo/
       </div>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ mdpo.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ mdpo.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
