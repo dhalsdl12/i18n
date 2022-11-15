@@ -21,7 +21,7 @@ avatar: https://raw.githubusercontent.com/aweekj/kiko-now/master/images/jekyll-l
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
   - name: mdpo
-    url: /
+    url: /mdpo
   - name: Blog
     url: /
   - name: About
