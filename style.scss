@@ -230,9 +230,9 @@ blockquote {
 // Footnote
 a.footnote {
   &,
-  .mdpo p &,
-  .mdpo ol &,
-  .mdpo ul & {
+  .post p &,
+  .post ol &,
+  .post ul & {
     margin: 0 3px;
     padding: 0 2px;
     font-size: $small-font-size;
